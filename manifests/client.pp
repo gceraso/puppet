@@ -41,7 +41,7 @@ class puppet::client (
     'puppet-launcher-sh':
       ensure  => present,
       path    => '/usr/local/bin/puppet-launcher.sh',
-      content => template('puppet/global/puppet-launcher.sh.erb'),
+      content => template('puppet/puppet-launcher.sh.erb'),
       owner   => 0,
       group   => 0,
       mode    => '0700';
